@@ -9,12 +9,12 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (  
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator >
         <Tab.Screen 
           name="Search" 
           component={Search} 
           options={{
-            title: 'Search',
+            headerShown: false,
             tabBarIcon: () => (
               <Image
                 source={require('./components/icons/search.png')}
